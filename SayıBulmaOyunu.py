@@ -1,3 +1,5 @@
+print("""SAYI BULMA OYUNUNA HOŞGELDİNİZ.OYUNUNDA RASTGELE 
+      DEĞERLER GİREREK DOĞRU MU YANLIŞ MI OLDUĞUNU BULMAYA ÇALIŞACAĞIZ""")
 
 
 import random
@@ -17,6 +19,5 @@ while (tahmin != bs):
         print("Daha Büyük Sayı Giriniz.")
         
 print("Doğru Bildiniz Tahmininiz:",tahmin)
-=======
-print("""SAYI BULMA OYUNUNA HOŞGELDİNİZ.OYUNUNDA RASTGELE 
-      DEĞERLER GİREREK DOĞRU MU YANLIŞ MI OLDUĞUNU BULMAYA ÇALIŞACAĞIZ""")
+
+
