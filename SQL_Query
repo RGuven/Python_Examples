@@ -1,0 +1,21 @@
+from alchemy import create_engine
+import pandas as pd 
+
+
+
+engine=create_engine("sqlite:///______.sqlite")
+
+//4 Satır Kod ile Yazılacak olursa
+with engine.connect() as con:
+  rs=con.execute("SELECT * FROM Turkey")
+  df=pd.DataFrame(rs.fetchmany(size=5))
+  df.columns=rs.keys()
+  
+//1 Satır Kod ile yazılacak olursa
+df1=pd.read_sql_query("SELECT * FROM Turkey",engine)
+
+Doğruluğunu kontrol etmek için:
+print(df1.query(df))
+
+
+ 
