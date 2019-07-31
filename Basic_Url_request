@@ -16,5 +16,5 @@ import pandas as pd
 url='https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
 df=pd.read_csv(url,sep=";") 
 
-df_excel=pd.read_excel(url,sheet_name=None)  // excel ile okumak için
+df_excel=pd.read_excel(url,sheetname=None)  // excel ile okumak için
 
