@@ -1,0 +1,5 @@
+import requests
+url="https://maker.robotistan.com/kategori/temel-elektronik/elektronik-devreler/"
+r=requests.get(url)
+text=r.text
+print(text) //HTML SAYFASI OLDUĞU GİBİ YAZDIRILIR.
