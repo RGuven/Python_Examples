@@ -1,0 +1,11 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://maker.robotistan.com/transistor-nedir/'
+r=requests.get(url)
+doc_text=r.text
+
+// Use BeautifulSoup
+
+soup=BeautifulSoup(doc_text)
+prettify=soup.prettify()
