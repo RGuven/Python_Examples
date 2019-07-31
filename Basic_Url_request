@@ -1,3 +1,4 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
 //Web'den veri çekip dataframe olarak yazdırmak.
 
 from urllib.request import urlretrieve
@@ -8,3 +9,12 @@ import pandas as pd
 url='https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
 urlretrieve(url,"örnek.csv") //İnternetteki veriyi csv formatında örnek.csv ismindeki klasörde local olarak kaydet.
 df=pd.DataFrame("örnek.csv",sep=",")
+--------------------------------------------------------------------------------------------------------------------------------------
+LOCALE KAYDETMEDEN DİREKT VERİLERİ OKUMAK İÇİN
+
+import pandas as pd
+url='https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
+df=pd.read_csv(url,sep=";") 
+
+df_excel=pd.read_excel(url,sheet_name=None)  // excel ile okumak için
+
