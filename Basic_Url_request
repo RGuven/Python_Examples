@@ -1,0 +1,10 @@
+//Web'den veri çekip dataframe olarak yazdırmak.
+
+from urllib.request import urlretrieve
+import pandas as pd
+
+// [http://archive.ics.uci.edu/ml/index.php ]'deki datasetleri kullanabiliriz.
+
+url='https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/datasets/winequality-red.csv'
+urlretrieve(url,"örnek.csv") //İnternetteki veriyi csv formatında örnek.csv ismindeki klasörde local olarak kaydet.
+df=pd.DataFrame("örnek.csv",sep=",")
