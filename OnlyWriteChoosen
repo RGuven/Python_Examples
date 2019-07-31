@@ -1,0 +1,16 @@
+//if you only want choose one tag 
+
+
+import requests
+from bs4 import BeautifulSoup
+
+
+url="https://maker.robotistan.com/robot-kontrolculeri-sensorler/"
+r=requests.get(url)
+html_doc=r.text
+soup=BeautifulSoup(html_doc)
+print(soup.title)
+a_tags=soup.find_all("a")
+
+for link in a_tags:
+    print(link.get("href"))
