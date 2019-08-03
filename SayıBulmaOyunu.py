@@ -1,4 +1,3 @@
-
 import random
 
 bs=random.randint(1,99)
@@ -16,4 +15,3 @@ while (tahmin != bs):
         print("Daha Büyük Sayı Giriniz.")
         
 print("Doğru Bildiniz Tahmininiz:",tahmin)
-
